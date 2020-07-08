@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./plugins/bootstrap/bootstrap.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/css/style.css">
+    <link rel="stylesheet" href="./styles/css/reset.css">
+    <link rel="stylesheet" href="./styles/css/fonts.css">
+    <link rel="stylesheet" href="./plugins/slick/slick.css">
+    <link rel="stylesheet" href="./styles/css/index.css">
+    <link rel="stylesheet" href="./styles/css/media.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- POPUPS -->
+
+        <div class="popups">
+            <div class="wrap popups__wrap">
+
+                <div class="consultation popup">
+                    <div class="popup__close"><img src="./img/close.svg" alt=""></div>
+
+                    <h1 class="title popup__title">
+                        Консультация
+                    </h1>
+
+                    <form action="" class="popup__form">
+                        <input type="text" name="consult-name" id="consult-name" placeholder="Имя *" required>
+                        <input type="text" name="consult-phone" id="consult-phone" placeholder="Телефон *" required>
+                        <input type="email" name="consult-email" id="consult-email" placeholder="Email">
+                        <textarea name="consult-text" id="consult-text" placeholder="Сообщение"></textarea>
+
+                        <input type="checkbox" name="consult-check" id="consult-check">
+                        <label for="consult-check" class="check-label">Согласен на обработку персональных данных</label>
+
+                        <input type="submit" value="Получить консультацию" class="button popup__button">
+                    </form>
+                </div>
+
+
+
+                <div class="entry popup">
+                    <div class="popup__close"><img src="./img/close.svg" alt=""></div>
+
+                    <h1 class="title popup__title">
+                        Записаться
+                    </h1>
+
+                    <form action="" class="popup__form">
+                        <input type="text" name="entry-name" id="entry-name" placeholder="Имя *" required>
+                        <input type="text" name="entry-phone" id="entry-phone" placeholder="Телефон *" required>
+                        <input type="email" name="entry-email" id="entry-email" placeholder="Email">
+
+
+                        <label for="select-box">Выберите услугу</label>
+
+                        <select name="select-box1" class="select">
+                            <option value="item-11" name="value">Уход за кожей1</option>
+                            <option value="item-21" name="value">Уход за кожей2</option>
+                            <span class="icon-chevron"></span>
+                        </select>
+
+
+                        <input type="text" name="entry-promo" id="entry-promo" placeholder="Промокод">
+
+                        <span class="popup__info">
+                            * Стоимость записи 10$
+                        </span>
+
+                        <input type="checkbox" name="entry-check" id="entry-check">
+                        <label for="entry-check" class="check-label">Согласен на обработку персональных данных</label>
+
+                        <input type="submit" value="Записаться" class="button popup__button">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="up-arrow">
+            <span class="icon-chevron"></span>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Header -->
+        <header class="header">
+            <div class="wrap-big header__wrap">
+
+                <div class="header--desktop">
+
+                    <div class="flex-row">
+
+                        <div class="socials header__socials">
+                            <a href="#" class="socials__social"><span class="icon-facebook"></span></a>
+                            <a href="#" class="socials__social"><span class="icon-instagram"></span></a>
+                            <a href="#" class="socials__social"><span class="icon-youtube"></span></a>
+                        </div>
+
+                        <div class="lang header__lang">
+                            <a href="#" class="lang__switcher">ru <span class="icon-shevron"></span></a>
+                            <div class="lang__dropdown">
+                                <a href="#" class="lang__item">ru</a>
+                                <a href="#" class="lang__item">uk</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="flex-row">
+                        <a href="./about.html" class="header__item">О нас</a>
+                        <a href="./services.html" class="header__item">Услуги</a>
+                        <a href="./prices.html" class="header__item">Цены</a>
+                    </div>
+
+                    <a href="./index.html" class="header__logo logo">
+                        <img src="./img/logo.png" alt="">
+                    </a>
+
+                    <div class="flex-row">
+                        <a href="./feedback.html" class="header__item">Отзывы</a>
+                        <a href="./gallery.html" class="header__item">Галерея</a>
+                        <a href="./discount.html" class="header__item">Скидки</a>
+                    </div>
+
+                    <a href="javascipt://" onclick="popupOpen2();" class="button header__button">Записаться</a>
+
+                </div>
+
+                <div class="header--mobile">
+                    <div class="header__row">
+                        <div class="header__toggler ">
+                            <span class="header__toggler--line"></span>
+                            <span class="header__toggler--line"></span>
+                            <span class="header__toggler--line"></span>
+                        </div>
+
+                        <a href="#" class="header__logo">
+                            <img src="./img/logo.png" alt="">
+                        </a>
+
+                        <div class="lang header__lang header__lang--mobile">
+                            <a href="#" class="lang__switcher">ru <span class="icon-shevron"></span></a>
+                            <div class="lang__dropdown lang__dropdown--mobile">
+                                <a href="#" class="lang__item">ru</a>
+                                <a href="#" class="lang__item">uk</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header__drop">
+                        <div class="header__menu">
+                            <a href="./about.html" class="header__item">О нас</a>
+                            <a href="./services.html" class="header__item">Услуги</a>
+                            <a href="./prices.html" class="header__item">Цены</a>
+                            <a href="./feedback.html" class="header__item">Отзывы</a>
+                            <a href="./gallery.html" class="header__item">Галерея</a>
+                            <a href="./discount.html" class="header__item">Скидки</a>
+                        </div>
+
+                        <div class="socials header__socials">
+                            <a href="#" class="socials__social header__social"><span class="icon-facebook"></span></a>
+                            <a href="#" class="socials__social header__social"><span class="icon-instagram"></span></a>
+                            <a href="#" class="socials__social header__social"><span class="icon-youtube"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <div class="page-heading rounded-bg">
+            <div class="page-heading__wrap">
+                <h1 class="title page-heading__title">
+                    Галерея
+                </h1>
+            </div>
+        </div>
+
+
+
+        <div class="crumbs">
+            <div class="wrap-big crumbs__wrap">
+                <a href="./index.html" class="crumbs__item">Главная</a>
+                <span>/</span>
+                <span class="crumbs__item crumbs__item--disable">
+                    Галерея
+                </span>
+            </div>
+        </div>
+
+
+        <!-- gallery -->
+        <div class="gallery">
+            <div class="wrap gallery__wrap">
+
+                <select name="select-box" class="select">
+                    <option value="item-1" name="value">Уход за кожей1</option>
+                    <option value="item-2" name="value">Уход за кожей2</option>
+                    <span class="icon-chevron"></span>
+                </select>
+
+                <div class="gallery__grid gallery__grid--big">
+                    <div class="gallery__img gallery__img--big">
+                        <img data-src="./img/gallery-img.png" alt="">
+                    </div>
+
+                    <div class="gallery__img gallery__img--medium">
+                        <img data-src="./img/gallery-img.png" alt="">
+                    </div>
+
+                    <div class="gallery__img gallery__img--small">
+                        <img data-src="./img/gallery-img.png" alt="">
+                    </div>
+
+                    <div class="gallery__img gallery__img--small">
+                        <img data-src="./img/gallery-img.png" alt="">
+                    </div>
+
+
+
+                    <div class="gallery__img gallery__img--big">
+                        <img data-src="./img/gallery-img.png" alt="">
+                    </div>
+
+                    <div class="gallery__img gallery__img--small">
+                        <img data-src="./img/gallery-img.png" alt="">
+                    </div>
+
+                    <div class="gallery__img gallery__img--medium">
+                        <img data-src="./img/gallery-img.png" alt="">
+                    </div>
+
+                    <div class="gallery__img gallery__img--small">
+                        <img data-src="./img/gallery-img.png" alt="">
+                    </div>
+
+                    
+
+                    
+                </div>
+
+                <div class="pagination">
+                    <div class="pagination__arrow pagination__arrow--left">
+                        <span class="icon-arrow"></span>
+                    </div>
+
+                    <div class="pagination__body">
+                        <a href="#" class="pagination__item pagination__item--active">
+                            <div class="pagination__item--wrap">
+                                1
+                            </div>
+                        </a>
+
+                        <a href="#" class="pagination__item">
+                            <div class="pagination__item--wrap">
+                                2
+                            </div>
+                        </a>
+
+                        <a href="#" class="pagination__item">
+                            <div class="pagination__item--wrap">
+                                3
+                            </div>
+                        </a>
+
+                        <a href="#" class="pagination__item">
+                            <div class="pagination__item--wrap">
+                                4
+                            </div>
+                        </a>
+
+                        <a href="#" class="pagination__item">
+                            <div class="pagination__item--wrap">
+                                5
+                            </div>
+                        </a>
+
+                        <a href="#" class="pagination__item">
+                            <div class="pagination__item--wrap">
+                                6
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="pagination__arrow pagination__arrow--right">
+                        <span class="icon-arrow"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="wrap-big footer__wrap">
+
+                <div class="footer__col footer__hide">
+                    <h3 class="footer__heading">
+                        Услуги
+                    </h3>
+
+                    <a href="#" class="footer__item">
+                        Пиллинг
+                    </a>
+
+                    <a href="#" class="footer__item">
+                        Уход за кожей
+                    </a>
+
+                    <a href="#" class="footer__item">
+                        Аппаратная косметология
+                    </a>
+
+                    <a href="#" class="footer__item">
+                        Массаж лица и тела
+                    </a>
+
+                    <a href="#" class="footer__item">
+                        Иньекционные процедуры
+                    </a>
+                </div>
+
+                <div class="footer__col footer__hide">
+                    <h3 class="footer__heading">
+                        О нас
+                    </h3>
+
+                    <a href="./prices.html" class="footer__item">
+                        Цены
+                    </a>
+
+                    <a href="./about.html" class="footer__item">
+                        О нас
+                    </a>
+
+                    <a href="./discount.html" class="footer__item">
+                        Акции
+                    </a>
+                </div>
+
+                <div class="footer__col footer__col--fill">
+                    <div class="logo"><img src="./img/logo.png" alt=""></div>
+
+                    <span class="footer__copyright footer__hide">
+                        © 2020 Cosmetolog Paris professionals
+                    </span>
+                </div>
+
+                <div class="footer__col">
+                    <h3 class="footer__heading footer__hide">
+                        Соцсети
+                    </h3>
+
+                    <div class="socials footer__socials">
+                        <a href="#" class="socials__row">
+                            <div class="socials__social footer__social">
+                                <span class="icon-facebook"></span>
+                            </div>
+
+                            <span class="footer__hide">
+                                Facebook
+                            </span>
+                        </a>
+
+                        <a href="#" class="socials__row">
+                            <div class="socials__social footer__social">
+                                <span class="icon-instagram"></span>
+                            </div>
+
+                            <span class="footer__hide">
+                                Instagram
+                            </span>
+                        </a>
+
+                        <a href="#" class="socials__row">
+                            <div class="socials__social footer__social">
+                                <span class="icon-youtube"></span>
+                            </div>
+
+                            <span class="footer__hide">
+                                Youtube
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="footer__brand">
+                        <span>Разработка сайта:</span>
+                        <img src="./img/mob-logo 1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script src="./js/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./plugins/slick/slick.min.js"></script>
+    <script src="./plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="./plugins/lazy/jQuery.loadScroll.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
